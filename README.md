@@ -20,6 +20,19 @@ All tools are packaged as standalone `.exe` files for easy use **without** a Pyt
 
 ---
 
+## 📁 Availability of Large Executables / Model Files
+
+Two standalone Windows builds exceed GitHub’s per-asset limit and are **not stored** in this repository.  
+Please **contact the authors to obtain them**.
+
+| Component (Stage)                                  | File name                 | Approx. size | Why not included                     | How to obtain |
+|----------------------------------------------------|---------------------------|--------------|--------------------------------------|---------------|
+| Generate coefficients \(a_j\) + Bernoulli \(K\)    | `cal_coefficient.exe`     | > 2 GB       | Exceeds GitHub per-asset size limit  | Email or open an Issue titled **“request-binaries: cal_coefficient”** |
+| Predict conformal mapping \(\theta, R\)            | `inverse_mapping.exe`     | > 2 GB       | Exceeds GitHub per-asset size limit  | Email or open an Issue titled **“request-binaries: inverse_mapping”** |
+
+> We will provide a private download link upon request.  
+---
+
 ## 1️⃣ `cal_coefficient.exe`: Generate Wave Coefficients
 
 ### 📅 Input
