@@ -1,4 +1,4 @@
-# ⚙️ Stokes Wave Solutions
+# ⚙️ Deep water Stokes Wave Solutions
 
 This repository provides **three GUI-based tools** for computing deep-water Stokes waves using hybrid machine learning models. The workflow consists of three stages:
 
@@ -10,27 +10,21 @@ All tools are packaged as standalone `.exe` files for easy use **without** a Pyt
 
 ---
 
-## 📦 Executables Overview
-
-| EXE File Name         | Purpose                                     | Input                      | Output                         |
-| --------------------- | ------------------------------------------- | -------------------------- | ------------------------------ |
-| `cal_coefficient.exe` | Generate Fourier coefficients \(a_j\)     | Steepness value            | `Solution_steepness_XXX.txt`   |
-| `inverse_mapping.exe` | Generate coordinates \(\theta, R\)       | Steepness + XY file (x, y) | `thetaR_output.txt`            |
-| `velocity_field.exe`  | Compute velocity field                      | `a.txt` + `thetaR.txt`     | `velocity_field.dat` (Tecplot) |
-
----
-
 ## 📁 Availability of Large Executables / Model Files
 
-Two standalone Windows builds exceed GitHub’s per-asset limit and are **not stored** in this repository.  
-Please **contact the authors to obtain them**.
+All **three Windows executables** and the **Python training/inference scripts** are available from the project page:
 
-| Component (Stage)                                  | File name                 | Approx. size | Why not included                     | How to obtain |
-|----------------------------------------------------|---------------------------|--------------|--------------------------------------|---------------|
-| Generate coefficients \(a_j\) + Bernoulli \(K\)    | `cal_coefficient.exe`     | > 2 GB       | Exceeds GitHub per-asset size limit  | Email or open an Issue titled **“request-binaries: cal_coefficient”** |
-| Predict conformal mapping \(\theta, R\)            | `inverse_mapping.exe`     | > 2 GB       | Exceeds GitHub per-asset size limit  | Email or open an Issue titled **“request-binaries: inverse_mapping”** |
+**https://numericaltank.sjtu.edu.cn/NonlinearWaves.htm**
 
-> We will provide a private download link upon request.  
+> Note: Two executables exceed GitHub’s per-asset size limit and are therefore hosted externally on the page above.
+
+| Component (Stage)                                   | File name                 | Notes                                           | Get it |
+|-----------------------------------------------------|---------------------------|-------------------------------------------------|--------|
+| Generate coefficients \(a_j\) + Bernoulli \(K\)     | `cal_coefficient.exe`     | > 2 GB; hosted externally                       | https://numericaltank.sjtu.edu.cn/NonlinearWaves.htm |
+| Predict conformal mapping \(\theta, R\)             | `inverse_mapping.exe`     | > 2 GB; hosted externally                       | https://numericaltank.sjtu.edu.cn/NonlinearWaves.htm |
+| Compute velocity field                               | `velocity_field.exe`      | Tecplot-ready output                            | https://numericaltank.sjtu.edu.cn/NonlinearWaves.htm |
+| Python CLI (data & code, README, scripts)           | `data-and-code.zip`       | Training/inference scripts for reproducibility  | https://numericaltank.sjtu.edu.cn/NonlinearWaves.htm |
+
 ---
 
 ## 1️⃣ `cal_coefficient.exe`: Generate Wave Coefficients
